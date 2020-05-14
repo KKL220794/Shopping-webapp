@@ -14,6 +14,8 @@ exports.signout = (req, res) => {
 // callback for the signup API
 exports.signup = (req, res) => {
     const errors = validationResult(req);
+    console.log(req.body);
+    
     if (!errors.isEmpty()) {
         return res.status(422).json({ errors: errors.array()[0].msg });
     }

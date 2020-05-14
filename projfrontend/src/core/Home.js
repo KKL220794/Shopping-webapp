@@ -1,11 +1,11 @@
 import React, { Component } from "react"; 
-
+import Base from "./Base";
 class Home extends Component {
   render() {
     return (
-     <div>
+     <Base title="my homepage" description = "testing homepage">
        <h1>Hello Frontend</h1>
-     </div>
+     </Base>
     );
   }
 }
